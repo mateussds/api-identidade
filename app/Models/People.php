@@ -8,11 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class People extends Model
 {
     public function father(){
-        return $this->belongTo(Father::Class);
+        return $this->belongTo(People::Class);
     }
 
     public function mother(){
-        return $this->belongTo(Mother::Class);
+        return $this->belongTo(People::Class);
     }
 
     public function documents(){
