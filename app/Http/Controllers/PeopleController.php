@@ -17,11 +17,13 @@ class PeopleController extends Controller
         $people->city_id =$request->city_id;   
     }
 
-    public function show(){
+    public function show($cpf){
+
+        return view( );
 
     }
     
-    public function update(){
+    public function update(Request $request){
 
     }
 }
