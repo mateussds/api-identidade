@@ -16,7 +16,9 @@ class CreatePeoples extends Migration
         Schema::create('peoples', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('name',120);
+            $table->string('first_name',120);
+            $table->string('family_name',120);
+            $table->string('last_name',120);
             $table->string('cpf',11);
             $table->date('birthdate');
             $table->unsignedBigInteger('father_id');

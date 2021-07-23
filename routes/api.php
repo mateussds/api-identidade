@@ -27,7 +27,7 @@ Route::get('/leis', [LawController::Class, 'index']);
 Route::post('/leis', [LawController::Class, 'create']);
 Route::post('/pessoas', [PeopleController::Class, 'create']);
 Route::get('/pessoas/{cpf}', [PeopleController::Class,'show']);
-Route::put('/pessoas', [PeopleController::Class, 'update']);
+Route::put('/pessoas/{cpf}', [PeopleController::Class, 'update']);
 Route::post('/documentos', [DocumentsControles::Class, 'create']);
 
 
