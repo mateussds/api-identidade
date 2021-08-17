@@ -15,7 +15,6 @@ class CitiesSeeder extends Seeder
     public function run()
     {
         DB::table('cities')->insert([[
-
             'name'=>'Belo Horizonte',
             'state_id'=>'1'
         ],[
